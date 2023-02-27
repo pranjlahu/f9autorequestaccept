@@ -20,6 +20,14 @@ gif = [
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Main process ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+#.                         Welcome Message 
+@app.on_message(filters.new_chat_members)
+
+async def welcome_message_handler(bot, m: Message):
+
+    message = f"Welcome {m.from_user.mention}! This is a sample bot."
+
+    await m.reply(message)
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
 async def approve(_, m : Message):
     op = m.chat
