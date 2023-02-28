@@ -25,7 +25,7 @@ gif = [
 
 async def welcome_message_handler(bot, m: Message):
 
-    message = f"Welcome {m.from_user.mention}! \n😀You can get the best👌 content 💡 from here . \nTHANKS FOR JOINING US. ."
+    message = f"Welcome {u.mention}! \n😀You can get the best👌 content 💡 from here . \nTHANKS FOR JOINING US. ."
 
     await m.reply(message)
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
