@@ -2,7 +2,7 @@
 👾 Hey I'll Accept telegram join requests. Easy to use and simple.
 
 ## 🚀 Demo Bot
-- [@kwicapprovalbot](https://t.me/kwicapprovalbot)
+- [F9_REQUESTACCEPTBOT](https://t.me/REQUESTAUTOACCEPT_BOT)
 
 <h2>〽️ Deploy Me </h2> 
   
@@ -44,5 +44,5 @@
   
 ### 💫 Credits
  - [Dan](https://github.com/delivrance) for pyrogram
- - [Me](https://github.com/KWICBOTS) for Nothing 😅
+ - [Me](https://github.com/Mujahidul 09) for Nothing 😅
  - [Repo owner](https://github.com/ImDenuwan) complete credits of Repo
