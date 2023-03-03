@@ -25,7 +25,7 @@ gif = [
 
 async def welcome_message_handler(bot, m: Message):
 
-    message = f"𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {m.from_user.mention}! \n😀ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙᴇ𝘀ᴛ ᴄᴏɴᴛᴇɴᴛ ғʀᴏᴍ ʜᴇʀᴇ .𝘀ᴏ ᴇɴᴊᴏʏ ᴀɴᴅ 𝗌ʜᴀʀᴇ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ . \n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 <a href=https://t.me/REQUESTAUTOACCEPT_BOT> AUTO REQUEST ACCEPTOR_bot</a> </b> ."
+    message = f"𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {m.from_user.mention}! \n😀ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙᴇ𝘀ᴛ ᴄᴏɴᴛᴇɴᴛ ғʀᴏᴍ ʜᴇʀᴇ .𝘀ᴏ ᴇɴᴊᴏʏ ᴀɴᴅ 𝗌ʜᴀʀᴇ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ . \n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 <a href=https://t.me/Auto_Request_Accepter_bot> AUTO REQUEST ACCEPTOR_bot</a> </b> ."
 
     await m.reply(message)
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
@@ -53,10 +53,10 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/F9Devs"),
-                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/CALLADMIN_beebot")
+                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/pranjal_movies"),
+                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/Pranjal_hu")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/REQUESTAUTOACCEPT_BOT?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Accepter_bot?startgroup")
                     ]
                 ]
             )
@@ -67,7 +67,7 @@ async def op(_, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/REQUESTAUTOACCEPT_BOT?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/Auto_Request_Accepter_bot?start=start")
                     ]
                 ]
             )
@@ -95,10 +95,10 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/F9Devs"),
-                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/CALLADMIN_beebot")
+                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/pranjal_movies"),
+                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/Pranjal_hu")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/REQUESTAUTOACCEPT_BOT?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Accepter_bot?startgroup")
                     ]
                 ]
             )
