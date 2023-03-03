@@ -14,7 +14,7 @@ app = Client(
 )
 
 gif = [
-    'https://telegra.ph/file/9df489cd30df527c37d6c.mp4'
+    'https://telegra.ph/file/2710a727db8c0fd0a2cf0.mp4'
 ]
 
 
@@ -25,7 +25,7 @@ gif = [
 
 async def welcome_message_handler(bot, m: Message):
 
-    message = f"Welcome {m.from_user.mention}! \n😀You can get the best👌 content 💡 from here . \nTHANKS FOR JOINING US. ."
+    message = f"𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {m.from_user.mention}! \n😀ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙᴇ𝘀ᴛ ᴄᴏɴᴛᴇɴᴛ ғʀᴏᴍ ʜᴇʀᴇ .𝘀ᴏ ᴇɴᴊᴏʏ ᴀɴᴅ 𝗌ʜᴀʀᴇ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ . \n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈  ."
 
     await m.reply(message)
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
