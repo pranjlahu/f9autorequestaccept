@@ -32,7 +32,7 @@ async def welcome_message_handler(bot, m: Message):
 async def approve(_, m : Message):
     op = m.chat
     kk = m.from_user
-    chat_link = await app.export_chat_invite_link(m.chat.id)
+   # chat_link = await app.export_chat_invite_link(m.chat.id)
     try:
         
         add_group(m.chat.id)
