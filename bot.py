@@ -25,7 +25,7 @@ gif = [
 
 async def welcome_message_handler(bot, m: Message):
 
-    message = f"𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {m.from_user.mention}! \n😀ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙᴇ𝘀ᴛ ᴄᴏɴᴛᴇɴᴛ ғʀᴏᴍ ʜᴇʀᴇ .𝘀ᴏ ᴇɴᴊᴏʏ ᴀɴᴅ 𝗌ʜᴀʀᴇ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ . \n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈  ."
+    message = f"𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {m.from_user.mention}! \n😀ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʙᴇ𝘀ᴛ ᴄᴏɴᴛᴇɴᴛ ғʀᴏᴍ ʜᴇʀᴇ .𝘀ᴏ ᴇɴᴊᴏʏ ᴀɴᴅ 𝗌ʜᴀʀᴇ ᴡɪᴛʜ ʏᴏᴜʀ ғʀɪᴇɴᴅ . \n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 <a href=https://t.me/REQUESTAUTOACCEPT_BOT> AUTO REQUEST ACCEPTOR_bot</a> </b> ."
 
     await m.reply(message)
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
@@ -36,7 +36,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**👋 HELLO {}!\nYOUR JOINING 🎟️ REQUEST FOR THE {} IS APPROVED ☑️. \nPLEASE MUST FOLLOW THE GROUP RULES🤠 . THANKS FOR JOINING\n\n__Powerd By : @F9Devs**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**👋 HELLO {}!\n\nYOUR JOINING 🎟️ REQUEST FOR THE {} IS APPROVED ☑️. \n\nPLEASE MUST FOLLOW THE GROUP RULES🤠 . THANKS FOR JOINING**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
