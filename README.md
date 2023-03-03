@@ -44,5 +44,5 @@
   
 ### 💫 Credits
  - [Dan](https://github.com/delivrance) for pyrogram
- - [Me](https://github.com/Mujahidul 09) for Nothing 😅
+ - [Me](https://github.com/Mujahidul09) for Nothing 😅
  - [Repo owner](https://github.com/ImDenuwan) complete credits of Repo
