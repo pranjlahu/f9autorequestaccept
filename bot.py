@@ -54,22 +54,18 @@ async def op(_, m :Message):
         if m.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/pranjal_movies"),
-                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/Pranjal_hu")
-                    ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Accepter_bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Approvel_bot?startgroup")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/38f34544ea576f9ab0c1b.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.\nAdd me to your chat and promote me to admin with add members permission.**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/Auto_Request_Accepter_bot?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/SDAutoApproveBot?start=start")
                     ]
                 ]
             )
@@ -96,11 +92,7 @@ async def chk(_, cb : CallbackQuery):
         if cb.message.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("🛸𝗢𝗪𝗡𝗘𝗥", url="https://t.me/pranjal_movies"),
-                        InlineKeyboardButton("💬𝗔𝗡𝗬 𝗛𝗘𝗟𝗣", url="https://t.me/Pranjal_hu")
-                    ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Accepter_bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/Auto_Request_Approvel_bot?startgroup")
                     ]
                 ]
             )
